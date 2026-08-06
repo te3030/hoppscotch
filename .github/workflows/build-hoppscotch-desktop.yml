@@ -61,7 +61,6 @@ jobs:
         with:
           repository: ${{ inputs.repository }}
           ref: ${{ inputs.tag != '' && inputs.tag || inputs.branch }}
-          token: ${{ secrets.HOPPSCOTCH_GITHUB_CHECKOUT_TOKEN }}
       - uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -162,7 +161,6 @@ jobs:
         with:
           repository: ${{ inputs.repository }}
           ref: ${{ inputs.tag != '' && inputs.tag || inputs.branch }}
-          token: ${{ secrets.HOPPSCOTCH_GITHUB_CHECKOUT_TOKEN }}
       - name: Set Perl environment variables
         shell: pwsh
         run: |
