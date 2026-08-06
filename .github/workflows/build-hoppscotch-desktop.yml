@@ -170,8 +170,6 @@ jobs:
         with:
           node-version: 20
       - uses: pnpm/action-setup@v4
-        with:
-          version: 10.18.3
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: nightly
